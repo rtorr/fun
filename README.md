@@ -1,4 +1,4 @@
-# Fun (i dont know what im building yet, so this is the name)
+# Demo project http://fun.rtorr.com/
 
 ### Setting up development
 
