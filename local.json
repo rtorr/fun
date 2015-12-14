@@ -1,0 +1,7 @@
+{
+  "domain": "localhost",
+  "port": 3188,
+  "cacheTimeout": 2592000000,
+  "cachePrivacy": "private",
+  "secret": "0a840dfsdasdf0e-change-this-for-production668eda0d1efbbb9b27df"
+}

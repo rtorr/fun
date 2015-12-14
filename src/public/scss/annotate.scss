@@ -1,0 +1,28 @@
+.annotate {
+  max-width: 100%;
+  padding: 20px;
+  h1 {
+    margin-bottom: 20px;
+  }
+}
+
+.annotate__container {
+  clear: both;
+  overflow: hidden;
+}
+
+.annotate__text {
+  background: rgba(0, 0, 0, .4);
+  float: left;
+  font-family: "Consolas", "Lucida Console", "Menlo", "Luxi Mono", monospace;
+  font-style: normal;
+  padding: 20px;
+  line-height: 20px;
+  p + p {
+    margin-top: 10px;
+  }
+
+  em {
+    background: #000;
+  }
+}

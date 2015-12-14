@@ -1,0 +1,3 @@
+dev_frontend_js: make webpack_dev
+dev-sass-watch: make watch_sass_dev
+dev_server_logs: make logs_dev

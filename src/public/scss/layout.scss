@@ -1,0 +1,43 @@
+.layout {
+  clear: both;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout__heading {
+  background: rgba(0, 0, 0, .4);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  padding: 20px;
+}
+
+.layout__heading__logo {
+  flex: 1;
+  justify-content: flex-start;
+  a {
+    color: #ECE8DD;
+    text-decoration: none;
+    &:visited {
+      color: #ECE8DD;
+    }
+  }
+}
+
+.layout__heading__options {
+  flex: 1;
+  justify-content: flex-end;
+  text-align: right;
+  a {
+    color: #ECE8DD;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 20px;
+    &:visited {
+      color: #ECE8DD;
+    }
+  }
+}
