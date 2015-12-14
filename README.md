@@ -34,15 +34,6 @@ open:
 
 `make deploy`
 
-### Testing
-
-`make test`
-
-
-### Production
-
-`make deploy`
-
 ## Notes
 
 The flux implementation uses Welp. Welp is a small project I made to teach what flux is to some students and
