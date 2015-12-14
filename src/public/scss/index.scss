@@ -13,6 +13,8 @@ html, body {
 
 body {
   background: linear-gradient(-180deg, #8B66BB 0%, #BEB2CC 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: 'Helvetica Neue', sans-serif;
   color: #ECE8DD;
   -webkit-font-smoothing: antialiased;
