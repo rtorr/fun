@@ -23,8 +23,8 @@ class Login extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    var username = this.state.username.trim();
-    var password = this.state.password.trim();
+    var username = this.state.username.trim().toLowerCase();
+    var password = this.state.password.trim().toLowerCase();
     if (!username || !password) {
       return;
     }
