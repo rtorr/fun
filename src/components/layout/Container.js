@@ -23,7 +23,7 @@ class Layout extends WelpComponent {
     return (
       <div className="layout">
         <div className="layout__heading">
-          <div className="layout__heading__logo"><Link to="/">let's annotate!</Link></div>
+          <div className="layout__heading__logo"><Link to="/">Demo</Link></div>
           {logged_in ?
             <div className="layout__heading__options">
               <Link to={`/users/${username}`}>profile</Link>
