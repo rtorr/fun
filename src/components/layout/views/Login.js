@@ -39,10 +39,10 @@ class Login extends React.Component {
         <form onSubmit={this.handleSubmit}>
           <input className="login__input login__input-text" onChange={this.handleUserNameChange} value={this.state.username} type="text" name="username" placeholder="username"/>
           <input className="login__input login__input-text" onChange={this.handlePasswordChange}  value={this.state.password} type="password" name="password" placeholder="password"/>
-          <input className="login__input login__input-submit" type="submit" value="lets annotate!" />
+          <input className="login__input login__input-submit" type="submit" value="let's annotate!" />
         </form>
         <div className="login__hint">
-          <p>Hint: You only need an username and password to register.</p>
+          <p>Hint: You only need a username and password to register.</p>
         </div>
       </div>
     );
