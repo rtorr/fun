@@ -18,15 +18,15 @@ class Layout extends WelpComponent {
   }
 
   render() {
-    const {logged_in, username} = this.state.user;
+    const {logged_in} = this.state.user;
     const child = logged_in ? this.props.children : <Login />;
     return (
       <div className="layout">
         <div className="layout__heading">
-          <div className="layout__heading__logo"><Link to="/">Demo</Link></div>
+          <div className="layout__heading__logo"><Link to="/">A Blog</Link></div>
           {logged_in ?
             <div className="layout__heading__options">
-              <Link to={`/users/${username}`}>profile</Link>
+              <Link to={`/posts`}>my posts</Link>
               <a onClick={this.handleLogout}>logout</a>
             </div>
             : ''}

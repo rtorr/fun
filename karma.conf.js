@@ -36,7 +36,8 @@ module.exports = function(config) {
       ],
       resolve: {
         alias: {
-          components: resolvPath('./src/components')
+          components: resolvPath('./src/components'),
+          lib: resolvPath('./src/lib')
         }
       }
     },

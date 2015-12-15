@@ -4,6 +4,11 @@ const validate = auth.validate;
 const authenticate = auth.authenticate;
 const Boom = require('boom');
 const get_db = require('./../../lib/database').get;
+const posts_create = require('./../../lib/posts').create;
+const posts_list_by_username = require('./../../lib/posts').list_by_username;
+const posts_list = require('./../../lib/posts').list;
+const get_post = require('./../../lib/posts').post;
+const edit_post = require('./../../lib/posts').edit;
 
 function get_shared_user_object(session) {
   var ctx = {};
@@ -16,7 +21,7 @@ function get_shared_user_object(session) {
 module.exports = [
   {
     method: 'GET',
-    path: '/',
+    path: '/{p*}',
     handler: (request, reply) => {
       var ctx = {};
       ctx.user = get_shared_user_object(request.session);
@@ -45,7 +50,6 @@ module.exports = [
     method: 'POST',
     path: '/api/authenticate',
     handler: (request, reply) => {
-      const username = request.session.get('username');
       validate(request.payload.username, request.payload.password, (err, value) => {
         if (err) {
           return reply.redirect('/', {
@@ -97,5 +101,30 @@ module.exports = [
       });
 
     }
+  },
+  {
+    method: 'GET',
+    path: '/api/users/posts/{username}',
+    handler: posts_list_by_username
+  },
+  {
+    method: 'GET',
+    path: '/api/posts',
+    handler: posts_list
+  },
+  {
+    method: 'GET',
+    path: '/api/posts/{post_id}',
+    handler: get_post
+  },
+  {
+    method: 'POST',
+    path: '/api/posts/create',
+    handler: posts_create
+  },
+  {
+    method: 'PUT',
+    path: '/api/posts/update/{post_id}',
+    handler: edit_post
   }
 ];

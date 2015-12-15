@@ -1,9 +1,7 @@
 import {WelpStore} from 'welp';
 import {
   LOGIN_SUCCESS,
-  LOGIN_FAIL,
-  LOGOUT_SUCCESS,
-  LOGOUT_FAIL
+  LOGOUT_SUCCESS
 } from './Actions';
 
 const Store = new WelpStore(
