@@ -19,6 +19,7 @@
   flex: 1;
   justify-content: flex-start;
   a {
+    display: inline-block;
     color: #ECE8DD;
     text-decoration: none;
     &:visited {
