@@ -23,7 +23,7 @@ class Index extends WelpComponent {
     return (
       <div className="index">
         <div className="post__list">
-          {posts}
+          {posts.length ? posts : <div className="no-posts">no posts yet, try and login and make a post!</div>}
         </div>
       </div>
     );
